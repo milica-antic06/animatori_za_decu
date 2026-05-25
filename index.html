@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Аниматори за децу</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link koji omogućava fa  fa-home preuzet sa https://www.w3schools.com/icons/tryit.asp?filename=tryicons_fa-home -->
+    <!-- Link za sajt sa koga su preuzimane slike za projekat https://www.gettyimages.com/ -->
+</head>
+<body>
+    <header>
+        <h1>Аниматори за децу</h1>
+    </header>
+    <!-- meni sajta -->
+    <nav class="topnav" id="myTopnav">
+        <a href="/index.html" class="active"><i class="fa fa-home"></i></a> <!-- kućica(home stranica(index.html)) -->
+        <a href="/o_nama.html">О нама</a>
+        <a href="/info.html">Услуге</a>
+        <a href="/kontakt.html">Контакт</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <main class="main">
+        <!-- centralni deo stranice -->
+        <div class="main-left-wrapper">
+            <section class="content">
+                <h2>Добро дошли на сајт наше компаније</h2>
+                <p>Наши програми су пажљиво осмишљени како би подстакли креативност и забаву код деце свих узраста. Од бајковитих анимација са омиљеним ликовима до научних експеримената и спортских рођендана, сваки програм је прилагођен узрасту и интересовањима деце.</p>
+                <p>Наши аниматори су образовани и искусни у раду са децом, пружајући незаборавно искуство кроз интерактивне и едукативне активности.</p>
+                <div class="image-gallery">
+                    <img src="img/a3.png" alt="Анимација са децом">
+                    <img src="img/a2.png" alt="Деца и принцеза">
+                </div>
+            </section>
+        </div>
+        <aside class="sidebar"> 
+            <!-- bočni deo stranice sa pesmom -->
+            <h3>Песма о цвету</h3>
+            <p><i>Бранко Миљковић</i></p>
+            <blockquote class="poem">
+                Један малени цвет <br>
+                још ни проговорио није <br>
+                А већ зна све тајне сунца <br>
+                И све што земља крије. <br><br>
+                Један малени цвет <br>
+                Још није ни проходао<br>
+                А већ је умео сам да се храни <br>
+                Светлошћу ваздухом и водом. <br><br>
+                Један малени цвет<br>
+                Не зна да чита и пише<br>
+                Ал зна шта је живот, шта је свет<br>
+                И мирише, мирише.
+            </blockquote>
+            <div class="sidebar-image">
+                <img src="img/a19.png" alt="Илустрација цвета">
+            </div>
+        </aside>
+    </main>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Аниматори за децу</h4>
+            <p>Стварамо магичне тренутке и незаборавне рођендане за Ваше малишане кроз игру, смех и науку.</p>
+        </div>
+        <div class="footer-section">
+            <p>
+                <!-- linkovi za pristup stranicama na sajtu preko futera -->
+                <a href="/index.html">Почетна</a> | 
+                <a href="/o_nama.html">О нама</a> | 
+                <a href="/info.html">Услуге</a> | 
+                <a href="/kontakt.html">Контакт</a>
+            </p>
+        </div>
+        <div class="footer-section">
+            <h4>Пратите нас</h4>
+            <p class="footer-socials">
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a>  <!-- trebalo bi da služi samo slikovito da liči na pravi footer , ne vodi nikuda-->
+                <a href="#"><i class="fa fa-instagram"></i> Instagram</a> <!-- trebalo bi da služi samo slikovito da liči na pravi footer, ne vodi nikuda -->
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Пројекат из увода у веб програмирање 2026. године.</p>
+    </div>
+</footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

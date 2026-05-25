@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуге - Аниматори за децу</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>Аниматори за децу</h1>
+    </header>
+    <nav class="topnav" id="myTopnav">
+        <a href="/index.html"><i class="fa fa-home"></i></a>
+        <a href="/o_nama.html">О нама</a>
+        <a href="/info.html" class="active">Услуге</a>
+        <a href="/kontakt.html">Контакт</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <main class="main">
+        <div class="main-left-wrapper">
+            <section class="content">
+                <h2>Наше услуге и ценовник</h2>
+                <p>Овде можете погледати наше главне програме за прославе и цене наших услуга.</p>
+                <table class="pricelist-table">
+                    <thead>
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Трајање</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Основна анимација (игре, такмичења, музика)</td>
+                            <td>2 сата</td>
+                            <td>2.000 динара</td>
+                        </tr>
+                        <tr>
+                            <td>Тематски рођендан (принцезе, суперхероји)</td>
+                            <td>2 сата</td>
+                            <td>4.000 динара</td>
+                        </tr>
+                        <tr>
+                            <td>Мађионичарски шоу и трикови</td>
+                            <td>45 минута</td>
+                            <td>500 динара </td>
+                        </tr>
+                        <tr>
+                            <td>Цртање по лицу  + балони</td>
+                            <td>Уз програм</td>
+                            <td>1.500 динара</td>
+                        </tr>
+                         <tr>
+                            <td>Експерименти</td>
+                            <td>1 сат</td>
+                            <td>1.500 динара</td>
+                        </tr>
+                         <tr>
+                            <td>Маскенбал</td>
+                            <td>Уз програм</td>
+                            <td>1.300 динара</td>
+                        </tr>
+                         <tr>
+                            <td>Празничне понуде</td>
+                            <td>1 сат</td>
+                            <td>900 динара</td>
+                        </tr>
+                         <tr>
+                            <td>Спортске активности</td>
+                            <td>1 сат</td>
+                            <td>600 динара</td>
+                        </tr>
+                        <tr>
+                            <td>Аниматори за децу у болници</td>
+                            <td>колико год је неопходно</td>
+                            <td>бесплатно</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <p>
+                    Наше услуге су доступне по договору, све навести у пријави у оквиру <b>контакт</b> странице.
+                </p>
+                   <div class="image-gallery">
+                    <img src="img/a12.png" alt="bolnica">
+                    <img src="img/a6.png" alt="bojenje lica"> 
+                    <img src="img/a10.png" alt="klovn">
+                </div>
+            </section>
+        </div>
+        <aside class="sidebar">
+            <h3>Песма о цвету</h3>
+            <p><i>Бранко Миљковић</i></p>
+            <blockquote class="poem">
+                Један малени цвет <br>
+                још ни проговорио није <br>
+                А већ зна све тајне сунца <br>
+                И све што земља крије. <br><br>
+                Један малени цвет <br>
+                Још није ни проходао<br>
+                А већ је умео сам да се храни <br>
+                Светлошћу ваздухом и водом. <br><br>
+                Један малени цвет<br>
+                Не зна да чита и пише<br>
+                Ал зна шта је живот, шта је свет<br>
+                И мирише, мирише.
+            </blockquote>
+            <div class="sidebar-image">
+                <img src="img/a19.png" alt=" ">
+            </div>
+        </aside>
+    </main>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Аниматори за децу</h4>
+            <p>Стварамо магичне тренутке и незаборавне рођендане за Ваше малишане кроз игру, смех и науку.</p>
+        </div>
+        <div class="footer-section">
+            <p>
+                <a href="/index.html">Почетна</a> | 
+                <a href="/o_nama.html">О нама</a> | 
+                <a href="/info.html">Услуге</a> | 
+                <a href="/kontakt.html">Контакт</a>
+            </p>
+        </div>
+        <div class="footer-section">
+            <h4>Пратите нас</h4>
+            <p class="footer-socials">
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a>  <!-- trebalo bi da sliži samo slikovito da liči na pravi footer -->
+                <a href="#"><i class="fa fa-instagram"></i> Instagram</a> <!-- trebalo bi da sliži samo slikovito da liči na pravi footer -->
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Пројекат из увода у веб програмирање 2026. године.</p>
+    </div>
+</footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>

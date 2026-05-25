@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакт - Аниматори за децу</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <h1>Аниматори за децу</h1>
+    </header>
+
+    <nav class="topnav" id="myTopnav">
+        <a href="/index.html"><i class="fa fa-home"></i></a>
+        <a href="/o_nama.html">О нама</a>
+        <a href="/info.html">Услуге</a>
+        <a href="/kontakt.html" class="active">Контакт</a>
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <main class="main">
+        <div class="main-left-wrapper">
+            <section class="content">
+                <h2>Контакт и заказивање програма</h2>
+                <p>Попуните форму испод како бисте резервисали свој термин на време.</p>
+                
+                <form class="kontakt-forma">
+                    <label for="ime">Ваше име и презиме:</label>
+                    <input type="text" id="ime" name="ime" placeholder="Унесите име">
+
+                    <label for="telefon">Број телефона:</label>
+                    <input type="text" id="telefon" name="telefon" placeholder="Унесите телефон">
+
+                    <label for="animator">Изаберите аниматора / програм:</label>
+                    <select id="animator" name="animator">
+                        <option value="">-- Изаберите опцију --</option>
+                        <option value="marko">аниматор Марко (Кловн Срећко - Спортске игре)</option>
+                        <option value="milena">аниматор Милена (Принцеза - Цртање по лицу)</option>
+                        <option value="nikola">аниматор Никола (Мађионичар и експерименти)</option>
+                        <option value="djordje">аниматор Ђорђе (Деда Мраз)</option>
+                        <option value="nevena">аниматор Невена (Вила - Чајанка)</option>
+                    </select>
+
+                    <div id="cenaPrikaz" class="cena-info-box" style="display: none;"></div>
+
+                    <label for="poruka">Додатне напомене или жеље:</label>
+                    <textarea id="poruka" name="poruka" rows="5" placeholder="Напишите поруку..."></textarea>
+
+                    <input type="submit" value="Пошаљи захтев">
+                    
+                </form>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Песма о цвету</h3>
+            <p><i>Бранко Миљковић</i></p>
+            <blockquote class="poem">
+                Један малени цвет <br>
+                још ни проговорио није <br>
+                А већ зна све тајне сунца <br>
+                И све што земља крије. <br><br>
+                Један малени цвет <br>
+                Још није ни проходао<br>
+                А већ је умео sam да се храни <br>
+                Светлошћу ваздухом и водом. <br><br>
+                Један малени цвет<br>
+                Не зна да чита и пише<br>
+                Ал зна шта је живот, шта је свет<br>
+                И мирише, мирише.
+            </blockquote>
+            <div class="sidebar-image">
+                <img src="img/a19.png" alt="Илустрација цвета">
+            </div>
+        </aside>
+    </main>
+   <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Аниматори за децу</h4>
+            <p>Стварамо магичне тренутке и незаборавне рођендане за Ваше малишане кроз игру, смех и науку.</p>
+        </div>
+        <div class="footer-section">
+            <p>
+                <a href="/index.html">Почетна</a> | 
+                <a href="/o_nama.html">О нама</a> | 
+                <a href="/info.html">Услуге</a> | 
+                <a href="/kontakt.html">Контакт</a>
+            </p>
+        </div>
+        <div class="footer-section">
+            <h4>Пратите нас</h4>
+            <p class="footer-socials">
+                <a href="#"><i class="fa fa-facebook"></i> Facebook</a>  <!-- trebalo bi da sliži samo slikovito da liči na pravi footer -->
+                <a href="#"><i class="fa fa-instagram"></i> Instagram</a> <!-- trebalo bi da sliži samo slikovito da liči na pravi footer -->
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Пројекат из увода у веб програмирање 2026. године.</p>
+    </div>
+</footer>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>
